@@ -1,5 +1,5 @@
 # Navaren's Name Maker
-![Showcase Image](https://github.com/Daxiongmao87/navarens-name-maker/blob/master/images/Showcase.gif?raw=true)
+![Showcase Image](https://github.com/Daxiongmao87/navarens-name-maker/blob/639497e17658726ca70ef325105f352fd8e02f44/images/Showcase.gif?raw=true)
 
 ## Description
 Navaren's Name Maker aims to be a robust and exhaustive tool for creating names for anything and everything.
