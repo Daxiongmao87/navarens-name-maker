@@ -17,7 +17,7 @@
   "styles": [
     "styles/main.css"
   ],
-  "url": "TBD",
-  "manifest": "TBD/module.json",
-  "download": "TBD/master.zip"
+  "url": "https://github.com/Daxiongmao87/navarens-name-maker",
+  "manifest": "https://github.com/Daxiongmao87/navarens-name-maker/blob/v0.1.0/module.json",
+  "download": "https://github.com/Daxiongmao87/navarens-name-maker/archive/refs/tags/v0.1.0.zip"
 }
