@@ -17,9 +17,7 @@ Navaren's Name Maker aims to be a robust and exhaustive tool for creating names 
 3. Currently there's only one algorithm to **Navaren's Name Maker** and it's based on an algorithm called a Markov Chain.  This is probably the most complex part so lets go through each portion individually:
   a. **Maker Name.** Just a name or label to give to this Maker
   b. **Dictionary.** This is a list of names or words you would like the maker to use as inspiration for new names.  An example of **human male names** would be something like this: 
-  ```
-  Michael,Christopher,Matthew,Michael,Christopher,Matthew,Joshua,Daniel,David,James,Robert,John,Joseph,Andrew,Ryan,etc
-  ```
+  ```Michael,Christopher,Matthew,Michael,Christopher,Matthew,Joshua,Daniel,David,James,Robert,John,Joseph,Andrew,Ryan,etc.```
   c. **Delimier. (Default: ",")** This is the character the maker will use to determine where one dictinoary item ends and another begins.  Commas are often used as delimiters.
   d. **Context Depth. (Default: "2")** As the maker creates a new name, this is the number of characters back it will reference for context when deciding on the next character.  The larger the number, the more structured the name will become, at the cost of less variety.  It's suggested that you have a larger dictionary the higher you place this number.
   e. **Length Range.** This is the length the maker will *try* to reach when creating a new name.  The minimum length should always be above the **Relation Depth**.
