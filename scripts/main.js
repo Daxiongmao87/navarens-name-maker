@@ -117,17 +117,13 @@ function refreshMakerListHook(app, html, data) {
 
   makersArray = []
   for (const [key, value] of Object.entries(makers)) {
-    console.log(value.id);
-    //if(value.id != app.options.label.makerId || app.options.label.deleted ) {
-      makersArray.push(value);
-    //}
+    makersArray.push(value);
 
   }
   populateMakerList(parent.app,parent.html,makersArray);
 }
 
  function populateMakerList(app, html, data){
-  console.log(data);
   makerEntries = [];
   let element = html.closest('.window-app').find('.maker-list');
   makerButtons = [];

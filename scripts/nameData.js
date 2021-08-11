@@ -18,7 +18,6 @@ class NameData {
     );
 }
   static getMaker(userId, id) {
-    console.log(userId + ",  " + id);
     if(userId == undefined || id == undefined) {
       return {delim: ",", prefixDepth: "2"}
     }
@@ -32,7 +31,6 @@ class NameData {
   }
 
   static createMaker(userId, nameData, app) {
-    console.log(nameData);
     const newMaker = {
       ...nameData,
       id: foundry.utils.randomID(16),
@@ -57,7 +55,6 @@ class NameData {
     const update = {
       [makerId]: updateData
     }
-    console.log(makerId, updateData, app);
     game.users.get(relevantMaker.userId)?.setFlag(
       NameMaker.ID,
       NameMaker.FLAGS.MAKERS,
@@ -69,7 +66,6 @@ class NameData {
 
   static deleteMaker(makerId, app) {
     const thisMaker = this.allMakers[makerId];
-    console.log(makerId);
     const keyDeletion = {
       [`-=${makerId}`]: null
     }

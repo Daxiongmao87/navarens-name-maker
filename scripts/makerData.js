@@ -18,7 +18,6 @@ class MakerData {
     );
 }
   static getMaker(userId, id) {
-    console.log(userId + ",  " + id);
     if(userId == undefined || id == undefined) return
     this.makerData = Object.entries(MakerData.getMakersForUser(userId));
     for(this.i = 0; this.i < this.makerData.length; this.i++) {
@@ -30,7 +29,6 @@ class MakerData {
   }
 
   static createMaker(userId, makerData, app) {
-    console.log(makerData);
     const newMaker = {
       ...makerData,
       id: foundry.utils.randomID(16),
@@ -55,7 +53,6 @@ class MakerData {
     const update = {
       [makerId]: updateData
     }
-    console.log(makerId, updateData, app);
     game.users.get(relevantMaker.userId)?.setFlag(
       NameMaker.ID,
       NameMaker.FLAGS.MAKERS,
@@ -67,7 +64,6 @@ class MakerData {
 
   static deleteMaker(makerId, app) {
     const thisMaker = this.allMakers[makerId];
-    console.log(makerId);
     const keyDeletion = {
       [`-=${makerId}`]: null
     }
