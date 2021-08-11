@@ -53,7 +53,7 @@ function submitMaker(html,data,app) {
     nameData = Object.entries(NameData.getMakersForUser(game.userId));
     existingNameDataId = "";
     console.log(data);
-    if(data.id != undefined) {
+    if(data != undefined && data.id != undefined) {
       id = data.id;
       console.log(id, saveData, app);
       for (i = 0; i < nameData.length; i++) {
