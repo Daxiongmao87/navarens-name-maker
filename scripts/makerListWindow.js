@@ -45,7 +45,6 @@ function generateMakerEntry(nameData) {
   return makerDiv;
 }
 function outputNames(names, html, app) {
-  console.log(html);
   let divElement = html.closest('.window-app').find('.maker-list-names');
   divElement.empty(); 
   nameElement = [];
