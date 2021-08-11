@@ -1,0 +1,30 @@
+{
+  "name": "navarens-name-maker",
+  "title": "Navaren's Name Maker",
+  "description": "A name maker based on the markov chain algorithm.  Other methods to come!",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.8",
+  "author": "Daxiongmao87",
+  "scripts": [
+    "scripts/main.js",
+    "scripts/makerListWindow.js",
+    "scripts/nameMakerWindow.js",
+    "scripts/nameMakerDeleteConfirmationWindow.js",
+    "scripts/nameData.js",
+    "scripts/maker.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "styles": [
+    "styles/main.css"
+  ],
+  "url": "TBD",
+  "manifest": "TBD/module.json",
+  "download": "TBD/master.zip"
+}
