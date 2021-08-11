@@ -32,4 +32,5 @@ Navaren's Name Maker aims to be a robust and exhaustive tool for creating names 
 * Adding the "Make Name" button to certain name fields (like actors, items, etc), and having a generated name auto-fill that field instead of going to your clipboard.
 * Complete redo of the code since it's god-awful. (My first javascript project!)
 * Localization
+* Placing all the necessary styling into the css folder
 
