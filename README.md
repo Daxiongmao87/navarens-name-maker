@@ -6,7 +6,7 @@ Navaren's Name Maker aims to be a robust and exhaustive tool for creating names 
 
 ## Installation
 1. Go to the "Add-on Modules" tab in Foundry Setup
-2. Click "Install Module" and search for **Navaren's Name Maker** OR alternatively copy this link ```https://www.com``` and paste it on the bottom where it says "Manifest URL:", then click the install button.
+2. Click "Install Module" and search for **Navaren's Name Maker** OR alternatively copy this link ```https://raw.githubusercontent.com/Daxiongmao87/navarens-name-maker/v0.1.0/module.json``` and paste it on the bottom where it says "Manifest URL:", then click the install button.
 3. Load your world.
 4. Navigate to the Settings tab, then click the "Manage Modules" button.
 5. Search for **Navaren's Name Maker** module, and ensure the checkbox is checked, then click on the "Save Module Settings" button.
