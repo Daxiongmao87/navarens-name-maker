@@ -20,10 +20,12 @@ function initActorSheetHook(app, html, data) {
 
 function initMakerListHook(app, html, data) {
   thisData = []
-  for(let i = 0; i < data.length; i++ ) {
-    thisData[i] = data[i][1];
+  if(data != null) {
+    for(let i = 0; i < data.length; i++ ) {
+      thisData[i] = data[i][1];
+    }
+    populateMakerList(app, html,thisData);
   }
-  populateMakerList(app, html,thisData);
   let openBtn = $(`<button type="button" style='width:96px;margin:auto;'>New Maker</button>`);
   openBtn.click(ev => {
     new NameMakerWindow(document).render(true, {
