@@ -50,9 +50,9 @@ function submitMaker(html,data,app) {
       delim: delim,
       data: dictData,
     };
-    nameData = Object.entries(NameData.getMakersForUser(game.userId));
     existingNameDataId = "";
     if(data != undefined && data.id != undefined) {
+      nameData = Object.entries(NameData.getMakersForUser(game.userId));
       id = data.id;
       for (i = 0; i < nameData.length; i++) {
         savedData = nameData[i][1];

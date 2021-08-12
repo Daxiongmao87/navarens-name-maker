@@ -2,7 +2,9 @@ class MakerListWindow extends Application {
   template = "modules/navarens-name-maker/templates/makerList.hbs";
   title = "Navaren's Name Maker";
   getData(options) {
-    let nameData = Object.entries(NameData.getMakersForUser(game.userId));  
+    let makers = NameData.getMakersForUser(game.userId);
+    if(makers === undefined) return;
+    let nameData = Object.entries(makers);  
     return nameData;
   }
 }

@@ -2,7 +2,7 @@
   "name": "navarens-name-maker",
   "title": "Navaren's Name Maker",
   "description": "A name maker based on the markov chain algorithm.  Other methods to come!",
-  "version": "0.1.1a",
+  "version": "0.1.1b",
   "minimumCoreVersion": "0.8.8",
   "compatibleCoreVersion": "0.8.8",
   "author": "Daxiongmao87",
@@ -19,5 +19,5 @@
   ],
   "url": "https://github.com/Daxiongmao87/navarens-name-maker",
   "manifest": "https://raw.githubusercontent.com/Daxiongmao87/navarens-name-maker/master/module.json",
-  "download": "https://github.com/Daxiongmao87/navarens-name-maker/archive/refs/tags/v0.1.1a.zip"
+  "download": "https://github.com/Daxiongmao87/navarens-name-maker/archive/refs/tags/v0.1.1b.zip"
 }
