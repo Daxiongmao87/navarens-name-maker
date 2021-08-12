@@ -24,6 +24,9 @@ Navaren's Name Maker aims to be a robust and exhaustive tool for creating names 
 1.  Your Maker List should now populate with your new maker.  Clicking on its button will create 3 names located on the bottom half of this window.
 1.  Once you've found a name that you're satisfied with, clicking on that name's button will copy it to your clipboard to paste wherever you'd like.
 
+## Macro
+To create a macro that pulls up the name generator list, use the following code snippet: ```new MakerListWindow().render(true, {width: 480});```
+
 ## Future Plans
 * Other procedural methods to name generation that would fit other name styles
   * Like random affixes to generate clan names like "Red + Hammer"
