@@ -4,7 +4,7 @@ class NameMakerWindow extends Application {
   getData(options) {
     if (options.label != undefined) {
       return NameData.getMaker(
-        options.label.userId, 
+        options.label.userId,
         options.label.makerId
       );
     }

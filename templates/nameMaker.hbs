@@ -1,41 +1,25 @@
-<div class='name-maker-window' style='min-width:320px;'>
+<div class='name-maker-window'>
   <div style="display:inline;">
   <b>Maker Name</b>
   <input type="text" id="name-maker-name" placeholder='Give this Maker a Name' value="{{makerName}}"></field>
   </div>
   <div>
   <b>Dictionary</b>
-  <textarea id="name-maker-dictionary" rows="5" placeholder="Enter a list of names here for the maker to process." style='resize: none;'>{{dict}}</textarea>
+  <textarea id="name-maker-dictionary" rows="5" placeholder="Enter a list of names here for the maker to process.">{{dict}}</textarea>
   </div>
   <p><b>Options</b></p>
-  <label for="name-maker-delimiter" style="line-height:24px;">Delimiter</label>
-  <input type="text" id="name-maker-delimiter" value="{{delim}}" maxlength="1" style='float: right; height: 20px; width:24px; text-align:center;'></field>
+  <label for="name-maker-delimiter">Delimiter</label>
+  <input type="text" id="name-maker-delimiter" value="{{delim}}" maxlength="1"></field>
   <br>
-  <label for="name-maker-relation-depth" style="line-height:24px;">Context Depth</label>
-  <input type="text" id="name-maker-relation-depth" value="{{prefixDepth}}"style='float:right; height: 20px; width:24px; text-align:center;'></field>
+  <label for="name-maker-relation-depth">Context Depth</label>
+  <input type="text" id="name-maker-relation-depth" value="{{prefixDepth}}"></field>
   <br>
   <span style="display: flex;">
-  <label for="name-maker-length-range-min" style="flex-grow: 1; line-height:24px;">Length Range</label>
-    <input type="text" id="name-maker-length-range-min" value="{{minLength}}"style='float:right; height: 20px; width:24px; text-align:center;'></field>  
-    <label style="float:right;margin-left:8px; margin-right:8px;line-height:24px;">to</label>
-    <input type="text" id="name-maker-length-range-max" value="{{maxLength}}"style='float:right; height: 20px; width:24px; text-align:center;'></field>  
+  <label for="name-maker-length-range-min" style="flex-grow: 1;">Length Range</label>
+  <input type="text" id="name-maker-length-range-min" value="{{minLength}}"></field>
+  <span style="padding: 2px 5px;">to</span>
+  <input type="text" id="name-maker-length-range-max" value="{{maxLength}}"></field>
   </span>
   <hr>
-  <div class='name-maker-submit-div' style='text-align:center;height:32px;bottom:0px;'></div>
+  <div class='name-maker-submit-div'></div>
 </div>
-
-<script>
-  function unhide (elementId, valueElementId) {
-    element = document.getElementById(elementId);
-    valueElement = document.getElementById(valueElementId);
-    element.style.display = (valueElement.checked) ? "block" : "none";
-  }
-  function newElementGroup(elementId) {
-    html = `
-      <div style='display:flex;'>
-        <b>Group Name</b>
-        <input type="text" id="name-maker-name" placeholder='Some Kind of Elvish' value="{{makerName}}"></field>
-      </div>
-    `
-  }
-</script>
