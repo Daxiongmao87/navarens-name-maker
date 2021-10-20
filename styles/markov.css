@@ -1,0 +1,174 @@
+/* General styles used in multiple elements */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+/* Main window styles */
+.maker-list-window h4 {
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+  font-size: 24px;
+}
+
+.maker-list-window sup {
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+  font-size: 16px;
+}
+
+.maker-list-window button {
+  width: 96px;
+}
+
+.maker-list {
+  min-height: 10px;
+  overflow-y: scroll;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+}
+
+.maker-list-names {
+  text-align: center;
+  column-count: 3;
+  height: 40px;
+  font-size: 24px;
+  color: #4b4a44;
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+}
+
+.new-maker-div, .new-name-div {
+  height: 32px;
+  text-align: center;
+}
+
+.name-list {
+  height: 190px;
+  overflow-y: scroll;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+}
+
+.name-list-names {
+  text-align: center;
+  column-count: 3;
+  height: 32px;
+  font-size: 24px;
+  color: #4b4a44;
+  font-family: "Modesto Condensed", "Palatino Linotype", serif
+}
+
+.name-maker-window {
+  min-width: 320px;
+}
+
+.name-maker-window label {
+  line-height: 24px;;
+}
+
+.name-maker-window h4 {
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+  font-size: 24px;
+}
+
+.name-maker-window button {
+  width: 96px;
+}
+
+.name-maker-dictionary {
+  resize: none;
+}
+
+#name-maker-delimiter, #name-maker-relation-depth, #name-maker-length-range-max, #name-maker-length-range-min {
+  float: right;
+  height: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.name-maker-submit-div {
+  text-align: center;
+  height: 32px;
+  bottom: 0px;
+}
+
+.name-maker-delete-confirmation-submit-div {
+  text-align: center;height: 32px
+}
+
+.name-maker-submit-div {
+  text-align: center;height: 32px;
+}
+
+.name-maker-delete-confirmation-window {
+  width: 240px;
+}
+
+.name-maker-delete-confirmation-window h4 {
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+  font-size: 24px;
+}
+
+.name-maker-delete-confirmation-window button {
+  width: 96px;
+}
+
+
+.maker-make-button {
+  width: 128px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+}
+
+.name-element-button {
+  height: 32px;
+  line-height: 100%;
+  font-family: "Modesto Condensed", "Palatino Linotype";
+  letter-spacing: 0.05em;
+  font-size: 0.75em
+}
+
+.edit-icon {
+  font-size: 16px;padding: 4px;
+}
+
+.makerItemContainer {
+  margin: 4px;
+  display: table;
+  height: 32px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.makerMakeButton {
+  width: 150px !important;
+  min-height: 28px;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+}
+
+.infoTextDiv {
+  padding-left: 8px;
+  display: table-cell;
+  height: 32px;
+  overflow: hidden;
+  width: 100%;
+  font-size: 0.85em;
+  vertical-align: middle;
+  column-count: 2;
+}
+
+.makerEditDiv {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}

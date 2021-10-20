@@ -15,7 +15,7 @@
     "scripts/maker.js"
   ],
   "styles": [
-    "styles/main.css"
+    "styles/markov.css"
   ],
   "url": "https://github.com/Daxiongmao87/navarens-name-maker",
   "manifest": "https://raw.githubusercontent.com/Daxiongmao87/navarens-name-maker/master/module.json",

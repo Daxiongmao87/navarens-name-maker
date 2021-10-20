@@ -9,7 +9,11 @@ class NameMaker {
 function initActorSheetHook(app, html, data) {
   let openBtn = $(`<a class="open-actor-name-maker" title="Make Name"><i class="fas fa-random"></i>Make Name</a>`);
   openBtn.click(ev => {
-    new MakerListWindow(app.document).render(true, {width: 480});
+    new MakerListWindow(app.document).render(true, {
+      resizable: true,
+      width: 480,
+      height: 400
+    });
   });
   html.closest('.app').find('.open-actor-name-maker').remove();
   let element = html.closest('.app').find('.window-title');
@@ -24,9 +28,9 @@ function initMakerListHook(app, html, data) {
     for(let i = 0; i < data.length; i++ ) {
       thisData[i] = data[i][1];
     }
-    populateMakerList(app, html,thisData);
+    populateMakerList(app, html, thisData);
   }
-  let openBtn = $(`<button type="button" style='width:96px;margin:auto;'>New Maker</button>`);
+  let openBtn = $(`<button type="button"'>New Maker</button>`);
   openBtn.click(ev => {
     new NameMakerWindow(document).render(true, {
       resizable: true,
@@ -54,7 +58,7 @@ function initNameMakerHook(app, html, data) {
     if(data.analyzeStructure) {
       element.trigger("click");
     }
-    let updateBtn = $(`<button class="name-maker-update-button" type="button" style='width:96px;float:left'>Update</button>`);
+    let updateBtn = $(`<button class="name-maker-update-button float-left" type="button">Update</button>`);
     updateBtn.click(ev => {
       submitMaker(html,data,app);
     });
@@ -62,7 +66,7 @@ function initNameMakerHook(app, html, data) {
     if (!app._minimized) {
       element.append(updateBtn);
     }
-    let deleteBtn = $(`<button class="name-maker-delete-button" type="button" style='width:96px;float:right'>Delete</button>`);
+    let deleteBtn = $(`<button class="name-maker-delete-button float-right" type="button">Delete</button>`);
     deleteBtn.click(ev => {
       new NameMakerDeleteConfirmationWindow(document).render(true, {
         label: {
@@ -82,7 +86,7 @@ function initNameMakerHook(app, html, data) {
     }
   }
   else {
-    let submitBtn = $(`<button type="button" style='width:96px;margin:auto;'>Submit</button>`);
+    let submitBtn = $(`<button type="button">Submit</button>`);
     submitBtn.click(ev => { submitMaker(html,undefined,app);
     });
     let element = html.closest('.window-app').find('.name-maker-submit-div');
@@ -93,7 +97,7 @@ function initNameMakerHook(app, html, data) {
 }
 
 function initNameMakerDeleteConfirmationHook(app, html, data) {
-  let yesBtn = $(`<button class="name-maker-update-button" type="button" style='width:96px;float:left'>Yes</button>`);
+  let yesBtn = $(`<button class="name-maker-update-button float-left" type="button">Yes</button>`);
   yesBtn.click(ev => {
     NameData.deleteMaker(data.id,app);
 
@@ -102,7 +106,7 @@ function initNameMakerDeleteConfirmationHook(app, html, data) {
   if (!app._minimized) {
     element.append(yesBtn);
   }
-  let noBtn = $(`<button class="name-maker-delete-button" type="button" style='width:96px;float:right'>No</button>`);
+  let noBtn = $(`<button class="name-maker-delete-button float-right" type="button">No</button>`);
   noBtn.click(ev => {
     app.close();
   });
@@ -146,6 +150,7 @@ function refreshMakerListHook(app, html, data) {
     makerEditButtons[i] = element.find('#makerEditButton-' + thisData[i].id);
     makerEditButtons[i].click(env => {
       new NameMakerWindow(document).render(true, {
+        resizable: true,
         label: {
           userId: game.userId,
           makerId: thisData[i].id,
